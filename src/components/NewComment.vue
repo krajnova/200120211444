@@ -53,6 +53,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$active-color: #fdd539;
+
 .new-comment-form {
   display: flex;
   flex-direction: column;
@@ -66,21 +68,23 @@ export default {
 
     &:focus {
       outline: 0;
-      border-color: #fdd539;
+      border-color: $active-color;
     }
   }
 
   &__button {
     padding: 11px 45px;
-    background-color: #fdd539;
-    border: 1px solid #fdd539;
+    background-color: $active-color;
+    border: 1px solid $active-color;
     border-radius: 23px;
     font-weight: 700;
-    cursor: pointer;
     font-family: "PT Sans", sans-serif;
     transition: background-color 0.2s;
+    cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
+      outline: 0;
       background-color: #fff;
     }
   }

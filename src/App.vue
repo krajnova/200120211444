@@ -20,6 +20,12 @@ export default {
   box-sizing: border-box;
 }
 
+html,
+body,
+#app {
+  height: 100%;
+}
+
 body,
 h1,
 h2,
