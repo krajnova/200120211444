@@ -1,3 +1,3 @@
 module.export = {
-  publicPath: '200120211444'
-}
+  publicPath: "/200120211444/"
+};
