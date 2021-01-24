@@ -134,18 +134,24 @@ export default {
 
 .consultant-page {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   &__consultant {
     @extend %page-part;
+    flex: 0 0 auto;
   }
 
   &__comments {
     @extend %page-part;
+    flex: 1 0 auto;
   }
 
   &__new-comment-wrap {
     position: sticky;
     bottom: 0;
+    flex: 0 0 auto;
     background-color: #f2f2f2;
     width: 100%;
   }
